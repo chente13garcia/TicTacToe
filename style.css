@@ -1,0 +1,194 @@
+*{
+  font-family: 'Gill Sans',sans-serif;
+  font-size: 30px;
+  padding: 0;
+  margin: 0;
+}
+
+body{
+  background-color: #f7f2f2;
+  padding-top: 60px;
+}
+
+.content{
+  width: 350px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+.marker{
+  width: 100%;	
+  display: flex;
+  margin: 0 auto 30px auto;
+}
+
+.marker .marker-item{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  height: 100px;
+  width: 100px;
+  line-height: 25px;
+  text-align: center;
+  margin-right: 30px;
+  border: 2px solid gray;
+  background-color: white;
+}
+
+.marker .marker-item .header{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: auto;
+  background-color: #d5d5d5;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.marker .marker-item span{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 0 auto;
+  width: 100%;
+  height: auto;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+table{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+table,
+table tr,
+table tr td{
+  border-collapse: collapse;
+  border: 1px solid lightgray;
+}
+
+table tr td{
+  padding: 10px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+
+table tr td span{		
+  width: 50px;
+  height: 50px;
+  display: block;
+  border-radius: 50%;
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+}
+
+table tr td span.player-O{
+  background-color: #f6a400;
+}
+
+table tr td span.player-X{
+  background-color: #04AA6D;
+}
+
+table.boardBlocked tr td{
+  opacity: 0.2;
+}
+
+div#result{
+  width: 100%;
+  background-color: #4bace6;
+  padding: 10px 20px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: white;
+  display: none;
+}
+
+div#result.visible{
+  display: inherit;
+}
+
+#restart {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width:1024px) and (max-width: 1200px) {
+  .content{
+    width: 340px;
+  }
+}
+
+@media screen and (min-width:767px) and (max-width:1024px) {
+  body{
+    padding-top: 10px;
+  }
+  .content{
+    width: 300px;
+  }
+  .marker{
+    width: 200px;	
+    display: flex;
+    margin: 0 auto 30px auto;
+  }
+  .marker .marker-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    height: 100px;
+    width: 80px;
+    line-height: 25px;
+    text-align: center;
+    border: 2px solid gray;
+    background-color: white;
+  }
+}
+
+@media screen and (max-width:767px) {
+  * {
+    font-size: 26px;
+  }
+  body{
+    padding-top: 10px;
+  }
+  .content{
+    width: 200px;
+  }
+  .marker{
+    width: 200px;	
+    display: flex;
+    margin: 0 auto 30px auto;
+  }
+  .marker .marker-item{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0 auto;
+    height: 100px;
+    width: 80px;
+    line-height: 25px;
+    text-align: center;
+    border: 2px solid gray;
+    background-color: white;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+}
